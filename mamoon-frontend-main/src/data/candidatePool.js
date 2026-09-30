@@ -1,0 +1,66 @@
+export const CANDIDATE_POOL = [
+  {
+    id: "omar-al-ansari",
+    name: "Omar Al-Ansari",
+    role: "Frontend Lead",
+    location: "Dubai",
+    years: 8,
+    skills: ["React", "TypeScript", "Design Systems", "Leadership"],
+    personality: { collaboration: 85, focus: 80, initiative: 88, resilience: 82 },
+    color: "#ea580c",
+  },
+  {
+    id: "layla-haddad",
+    name: "Layla Haddad",
+    role: "Senior Frontend Engineer",
+    location: "Riyadh",
+    years: 6,
+    skills: ["React", "TypeScript", "Design Systems", "RTL"],
+    personality: { collaboration: 90, focus: 75, initiative: 80, resilience: 85 },
+    color: "#7c3aed",
+  },
+  {
+    id: "raneem-nasser",
+    name: "Raneem Nasser",
+    role: "Software Engineer",
+    location: "Amman",
+    years: 5,
+    skills: ["React", "TypeScript", "GraphQL", "Testing"],
+    personality: { collaboration: 70, focus: 65, initiative: 92, resilience: 78 },
+    color: "#0f766e",
+  },
+  {
+    id: "sara-khalil",
+    name: "Sara Khalil",
+    role: "Design Systems Engineer",
+    location: "Beirut",
+    years: 5,
+    skills: ["React", "Figma", "Design Systems", "Tailwind"],
+    personality: { collaboration: 75, focus: 70, initiative: 68, resilience: 80 },
+    color: "#dc2626",
+  },
+  {
+    id: "ahmad-deeb",
+    name: "Ahmad Deeb",
+    role: "Senior Engineer",
+    location: "Riyadh",
+    years: 7,
+    skills: ["Node.js", "Postgres", "AWS", "TypeScript"],
+    personality: { collaboration: 60, focus: 72, initiative: 65, resilience: 70 },
+    color: "#ca8a04",
+  },
+  {
+    id: "youssef-karim",
+    name: "Youssef Karim",
+    role: "Frontend Developer",
+    location: "Cairo",
+    years: 4,
+    skills: ["React", "JavaScript", "CSS", "Node.js"],
+    personality: { collaboration: 80, focus: 78, initiative: 82, resilience: 85 },
+    color: "#2563eb",
+  },
+];
+
+export function getCandidateById(id) {
+  return CANDIDATE_POOL.find((c) => c.id === id);
+}

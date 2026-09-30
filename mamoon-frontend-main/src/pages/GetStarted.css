@@ -1,0 +1,146 @@
+.onboard {
+  flex: 1;
+  background: var(--color-bg-soft);
+  padding: 72px 0 88px;
+}
+
+.onboard__inner {
+  max-width: 900px;
+  text-align: center;
+}
+
+.onboard__title {
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 800;
+}
+
+.onboard__subtitle {
+  color: var(--color-ink-soft);
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.onboard__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-top: 44px;
+  text-align: left;
+}
+
+.role-card {
+  border-radius: var(--radius-lg);
+  border: 1.5px solid;
+  padding: 32px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.role-card--candidate {
+  border-color: var(--color-purple-soft-border);
+  background: linear-gradient(180deg, var(--color-purple-soft) 0%, #fff 55%);
+}
+
+.role-card--employer {
+  border-color: var(--color-orange-soft-border);
+  background: linear-gradient(180deg, var(--color-orange-soft) 0%, #fff 55%);
+}
+
+.role-card__icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+}
+.role-card__img{
+  width: 50%;
+  height: 50%;
+  object-fit: cover;  
+}
+
+.role-card--candidate .role-card__icon {
+  background: var(--color-purple);
+}
+
+.role-card--employer .role-card__icon {
+  background: var(--color-orange);
+}
+
+.role-card__pill--candidate {
+  background: #efe2fd;
+  color: var(--color-purple-dark);
+}
+
+.role-card__pill--employer {
+  background: #fde3cf;
+  color: var(--color-orange-dark);
+}
+
+.role-card__title {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.role-card__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.role-card__list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14.5px;
+  color: var(--color-ink-soft);
+}
+
+.role-card--candidate .role-card__list li span {
+  color: var(--color-purple);
+}
+
+.role-card--employer .role-card__list li span {
+  color: var(--color-orange);
+}
+
+.role-card .btn {
+  margin-top: 10px;
+}
+
+.onboard__login {
+  margin-top: 30px;
+  font-size: 14.5px;
+  color: var(--color-ink-soft);
+}
+
+.onboard__login a {
+  color: var(--color-purple);
+  font-weight: 700;
+}
+
+.onboard__login a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .onboard__grid {
+    grid-template-columns: 1fr;
+  }
+}
